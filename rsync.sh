@@ -11,11 +11,12 @@ fi
 src=rsync://rsync.alpinelinux.org/alpine/
 dest=/var/www/localhost/htdocs/alpine/
 
-/usr/bin/rsync -pruav \
+/usr/bin/rsync -prua \
     --exclude-from /etc/rsync/exclude.txt \
     --delete \
     --timeout=120 \
     --delay-updates \
     --timeout=600  \
     --delete-after \
+    -v -v \
     "$src" "$dest"

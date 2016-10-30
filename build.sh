@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t alpine-mirror .
+docker build -t davem/alpine-mirror .
