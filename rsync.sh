@@ -11,7 +11,7 @@ fi
 src=rsync://rsync.alpinelinux.org/alpine/
 dest=/var/www/localhost/htdocs/alpine/
 
-/usr/bin/rsync -prua \
+/usr/bin/rsync -pruav \
     --exclude-from /etc/rsync/exclude.txt \
     --delete \
     --timeout=120 \
